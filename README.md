@@ -1,6 +1,6 @@
 ![MATLAB](https://img.shields.io/badge/MATLAB-%23D00000.svg?style=plastic&logo=mathworks&logoColor=white)
 
-![GitHub](https://img.shields.io/github/license/Ramy-Badr-Ahmed/Merkle-DAG-Matlab)
+![GitHub](https://img.shields.io/github/license/Ramy-Badr-Ahmed/Merkle-DAG-Matlab?cached)
 
 # Merkle-DAG Implementation in MATLAB
 
