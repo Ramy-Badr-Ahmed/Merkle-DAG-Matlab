@@ -38,7 +38,7 @@ The Merkle-DAG is a cryptographic data structure used to efficiently verify the 
 
 #### Manually Create the Merkle-DAG (Adding Nodes)
 
-Use case: for scenarios where the DAG structure is not strictly determined by the data itself but by specific relationships or dependencies.
+Use case: for scenarios where the DAG structure is not strictly determined by the data itself (no specific relationships/dependencies).
 
 ```matlab
 node1 = MerkleDAGNode([1 2 3]);     % default: SHA-256, if no hash algorithm specified
@@ -63,7 +63,8 @@ DAGGraph.traverseBFS();     % Breadth-First (BFS) traversal
 
 #### Build DAG from data blocks
 
-use case: automated, allowing constructing a Merkle-DAG from a matrix of data blocks.
+Use case: automated, allowing constructing a Merkle-DAG from a matrix of data blocks.
+
 Each row of the matrix represents a data block. The DAG is built by hashing these blocks into the graph. 
 For scenarios where the relationships between data blocks are determined by their positions in the matrix.
 
@@ -86,7 +87,7 @@ merkleDAG.traverseBFS();     % Breadth-First (BFS) traversal
 #### Integrity Verification
 
 The verifyBlock method checks whether a specific data block is part of the Merkle-DAG. 
-Computes the hash of the data block and verifying it against the hashes in the DAG.
+Computes the hash of the data block and verifies it against the hashes in the DAG.
 
 ```matlab
 % Verify a specific data block 
