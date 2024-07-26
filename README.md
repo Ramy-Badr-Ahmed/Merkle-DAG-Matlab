@@ -12,11 +12,11 @@ The Merkle-DAG is a cryptographic data structure used to efficiently verify the 
 
 > [IPFS Link](https://docs.ipfs.tech/concepts/merkle-dag/)
 
-### Features
+### Overview
 
-- Build Merkle-DAG: Construct a Merkle-DAG manually or from data blocks.
-- Traversal and Verification: Traverse the structure and verify the integrity of data blocks.
-- Flexible Hash Algorithms: Ability to choose and change hash algorithms for computing node hashes.
+- Construct a Merkle-DAG manually or from data blocks.
+- Traverse the graph structure and verify the integrity of data blocks.
+- Multiple hash algorithms for computing node hashes.
    
     Supported algorithms from Java Security (via MATLAB)  
     ```matlab
