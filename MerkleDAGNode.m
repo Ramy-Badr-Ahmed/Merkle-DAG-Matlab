@@ -1,9 +1,9 @@
 classdef MerkleDAGNode < handle
     properties
-        Data        % Data associated with the node
-        Hash        % Stores the cryptographic hash of either the provided data or directly assigned hash
-        Children    % Array of child nodes
-        Parent      % Parent node
+        Data            % Data associated with the node
+        Hash            % Stores the cryptographic hash of either the provided data or directly assigned hash
+        Children        % Array of child nodes
+        Parent          % Parent node
         HashAlgorithm   % Hashing algorithm (default: 'SHA-256')
     end
     
