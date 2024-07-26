@@ -38,7 +38,7 @@ classdef MerkleDAG < handle
             
             % Build parent nodes iteratively until a single root node is created
             while numel(nodes) > 1                
-                newSize = ceil(numel(nodes) / 2);   % Preallocate to half of the size of the current nodes
+                newSize = ceil(numel(nodes) / 2);   % Preallocate to half of the size of the current nodes (enhances performance)
                 level = cell(newSize, 1);                
                 index = 1;
 
